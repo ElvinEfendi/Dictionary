@@ -1,0 +1,1 @@
+Dictionary is a simple ruby program that gets the word from user and show description for the word. If the word is not in dictionary then program allows user add this word to the dictionary.
