@@ -1,9 +1,7 @@
 dict = {"car"=>"A car is a vehicle with 4 wheels"} #init hash
-exit=false #exit flag
-
 puts 'Welcome to the self-learning dictionary!'    #Welcome user
 
-while !exit
+while true
   print "Please enter a word: "
   key = gets.chomp.downcase                        #get word then clean and lowercase it
   if dict.has_key?(key)                            #look for word
@@ -16,6 +14,7 @@ while !exit
       puts "Please, enter decription for #{key}: "
       value = gets.chomp                           #get description for new word
       dict[key]=value                              #add (word, desc) pair to the dictionary
+      puts "Thank you!"
     end                                            #add new word
   end                                              #look for word
 end                                                #end while
